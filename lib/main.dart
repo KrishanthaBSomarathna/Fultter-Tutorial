@@ -19,8 +19,31 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder, // Wrap your app with DevicePreview
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        
+        appBar: AppBar(backgroundColor: Color(0xFF9E00FF)),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+              width: double.infinity,
+              height: 175,
+              color: Color(0xff06FFA5),
+            ),
+            Container(
+              width: double.infinity,
+              height: 175,
+              color: Color(0xff06FFA5),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(width: 175, height: 300, color: Color(0xffFFE500)),
+                Container(width: 175, height: 300, color: Color(0xffFFE500)),
+              ],
+            ),
+          ],
+        ),
       ),
       
 
