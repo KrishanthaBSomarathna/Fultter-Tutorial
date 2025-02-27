@@ -19,6 +19,12 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder, // Wrap your app with DevicePreview
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
+      home: Scaffold(
+        
+      ),
+      
+
+
     );
   }
 }
